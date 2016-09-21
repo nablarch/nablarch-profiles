@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--
+   Nablarchが提供する成果物のバージョンを定義する。
+   ここで定義された成果物群がNablarchとして組み合わせの保証をするものである。
+
+   このpomでバージョンを定義することにより以下のメリットが得られる。
+   * あるリリース時点での成果物の組み合わせがこのpom一箇所で管理できる。
+   * 提供方法によって処理方式によって、バージョン食い違いを防げる。
+     (例：profile-webはcore-1.0に依存するが、profile-batchはcore-1.1に依存する
+         というような食い違いが発生しない）
+
+  -->
+
+  <groupId>com.nablarch.profile</groupId>
+  <artifactId>nablarch-bom</artifactId>
+  <version>5u6</version>
+  <packaging>pom</packaging>
+
+  <name>nablarch-bom</name>
+  <description>Nablarch Framework.</description>
+  <url>https://github.com/nablarch</url>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>nablarch</id>
+      <name>Nablarch</name>
+      <email>nablarch@tis.co.jp</email>
+      <organization>Nablarch</organization>
+      <organizationUrl>https://github.com/nablarch</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/nablarch/nablarch-profiles.git</connection>
+    <developerConnection>scm:git:ssh://github.com/nablarch/nablarch-profiles.git</developerConnection>
+    <url>https://github.com/nablarch/nablarch-profiles/tree/master</url>
+  </scm>
+
+  <properties>
+    <version.geronimo-jpa_spec>1.1</version.geronimo-jpa_spec>
+    <version.taglibs.standard>1.1.2</version.taglibs.standard>
+
+    <release.allow.snapshot>false</release.allow.snapshot>
+    <version.nablarch.jars>${project.version}</version.nablarch.jars>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.1</version>
+        <configuration>
+          <tagNameFormat>@{project.version}</tagNameFormat>
+          <allowTimestampedSnapshots>${release.allow.snapshot}</allowTimestampedSnapshots>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <!--Nablarch Application Framework -->
+      <!-- core -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-core</artifactId>
+        <version>1.2.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-core-applog</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-core-beans</artifactId>
+        <version>1.1.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-core-dataformat</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-core-jdbc</artifactId>
+        <version>1.1.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-core-message</artifactId>
+        <version>1.1.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-core-repository</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-core-transaction</artifactId>
+        <version>1.1.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-core-validation</artifactId>
+        <version>1.0.3</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-core-validation-ee</artifactId>
+        <version>1.0.3</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-etl</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <!-- fw -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw</artifactId>
+        <version>1.1.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-batch</artifactId>
+        <version>1.1.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-batch-ee</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-jaxrs</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-messaging</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-messaging-http</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-messaging-mom</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-standalone</artifactId>
+        <version>1.1.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-web</artifactId>
+        <version>1.2.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-web-dbstore</artifactId>
+        <version>1.0.3</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-web-extension</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-web-hotdeploy</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-web-tag</artifactId>
+        <version>1.0.3</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-mail-sender</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <!-- common -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-auth</artifactId>
+        <version>1.1.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-auth-jdbc</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-code</artifactId>
+        <version>1.2.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-code-jdbc</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-dao</artifactId>
+        <version>1.3.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-databind</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-date</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-encryption</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-exclusivecontrol</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-exclusivecontrol-jdbc</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-idgenerator</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-idgenerator-jdbc</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-common-jdbc</artifactId>
+        <version>1.1.1</version>
+      </dependency>
+
+      <!-- misc -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-backward-compatibility</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <!-- Nablarch Testing Framework -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-testing</artifactId>
+        <version>1.0.6</version>
+      </dependency>
+
+      <!-- toolbox -->
+      <dependency>
+        <groupId>com.nablarch.tool</groupId>
+        <artifactId>nablarch-toolbox</artifactId>
+        <version>1.0.2</version>
+      </dependency>
+
+      <!-- デフォルト設定ファイル -->
+      <dependency>
+        <groupId>com.nablarch.configuration</groupId>
+        <artifactId>nablarch-main-default-configuration</artifactId>
+        <version>1.0.3</version>
+      </dependency>
+      <dependency>
+        <groupId>com.nablarch.configuration</groupId>
+        <artifactId>nablarch-testing-default-configuration</artifactId>
+        <version>1.0.2</version>
+      </dependency>
+
+      <!-- アダプター -->
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-router-adaptor</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-jersey-adaptor</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-resteasy-adaptor</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-jackson-adaptor</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-log4j-adaptor</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-wmq-adaptor</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
+      <!-- サードパーティライブラリ -->
+      <dependency>
+        <groupId>taglibs</groupId>
+        <artifactId>standard</artifactId>
+        <version>${version.taglibs.standard}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.geronimo.specs</groupId>
+        <artifactId>geronimo-jpa_2.0_spec</artifactId>
+        <version>${version.geronimo-jpa_spec}</version>
+      </dependency>
+
+      <!-- Nablarch Profiles -->
+      <dependency>
+        <groupId>com.nablarch.profile</groupId>
+        <artifactId>nablarch-all-in-one</artifactId>
+        <version>5u6</version>
+      </dependency>
+      <dependency>
+        <groupId>com.nablarch.profile</groupId>
+        <artifactId>nablarch-web</artifactId>
+        <version>5u6</version>
+      </dependency>
+      <dependency>
+        <groupId>com.nablarch.profile</groupId>
+        <artifactId>nablarch-batch</artifactId>
+        <version>5u6</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>nablarch.staging</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+    <snapshotRepository>
+      <id>nablarch.snapshot</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>

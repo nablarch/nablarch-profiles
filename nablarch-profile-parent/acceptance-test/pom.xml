@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.nablarch.profile</groupId>
+  <artifactId>acceptance-test</artifactId>
+  <version>ACCEPTANCE-TEST-VERSION-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <nablarch.version>5u6</nablarch.version>
+  </properties>
+
+  <modules>
+    <module>acceptance-test-all</module>
+    <module>acceptance-test-batch</module>
+    <module>acceptance-test-web</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.nablarch.profile</groupId>
+        <artifactId>nablarch-bom</artifactId>
+        <version>${nablarch.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
