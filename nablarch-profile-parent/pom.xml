@@ -93,6 +93,13 @@
         </executions>
       </plugin>
     </plugins>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav-jackrabbit</artifactId>
+        <version>3.0.0</version>
+      </extension>
+    </extensions>
   </build>
 
   <distributionManagement>
@@ -105,4 +112,24 @@
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
+
+  <profiles>
+    <profile>
+      <id>travis</id>
+      <properties>
+        <gpg.skip>true</gpg.skip>
+      </properties>
+      <distributionManagement>
+        <repository>
+          <id>travis</id>
+          <url>${develop_repo_url}</url>
+        </repository>
+        <site>
+          <id>travis</id>
+          <url>${develop_test_report_url}</url>
+        </site>
+      </distributionManagement>
+    </profile>
+  </profiles>
+
 </project>
