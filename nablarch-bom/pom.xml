@@ -336,7 +336,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-testing</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
       </dependency>
 
       <!-- toolbox -->
