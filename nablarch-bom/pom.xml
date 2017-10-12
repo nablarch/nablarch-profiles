@@ -53,6 +53,9 @@
 
     <release.allow.snapshot>false</release.allow.snapshot>
     <version.nablarch.jars>${project.version}</version.nablarch.jars>
+
+    <!-- デフォルトではgpg-pluginの処理をスキップする。(profileで有効化する) -->
+    <gpg.skip>true</gpg.skip>
   </properties>
 
   <build>
