@@ -465,11 +465,11 @@
       </properties>
       <distributionManagement>
         <repository>
-          <id>travis</id>
+          <id>dev-deploy</id>
           <url>${develop_repo_url}</url>
         </repository>
         <site>
-          <id>travis</id>
+          <id>dev-deploy</id>
           <url>${develop_test_report_url}</url>
         </site>
       </distributionManagement>
