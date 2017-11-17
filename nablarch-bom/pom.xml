@@ -446,4 +446,34 @@
     </dependencies>
   </dependencyManagement>
 
+  <distributionManagement>
+    <repository>
+      <id>nablarch.staging</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+    <snapshotRepository>
+      <id>nablarch.snapshot</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <profiles>
+    <profile>
+      <id>travis</id>
+      <properties>
+        <gpg.skip>true</gpg.skip>
+      </properties>
+      <distributionManagement>
+        <repository>
+          <id>travis</id>
+          <url>${develop_repo_url}</url>
+        </repository>
+        <site>
+          <id>travis</id>
+          <url>${develop_test_report_url}</url>
+        </site>
+      </distributionManagement>
+    </profile>
+  </profiles>
+
 </project>
