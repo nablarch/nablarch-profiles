@@ -459,7 +459,7 @@
 
   <profiles>
     <profile>
-      <id>travis</id>
+      <id>dev-deploy</id>
       <properties>
         <gpg.skip>true</gpg.skip>
       </properties>
