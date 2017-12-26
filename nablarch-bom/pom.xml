@@ -420,6 +420,11 @@
         <artifactId>nablarch-mail-sender-freemarker-adaptor</artifactId>
         <version>1.0.0</version>
       </dependency>
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-mail-sender-thymeleaf-adaptor</artifactId>
+        <version>1.0.0</version>
+      </dependency>
 
       <!-- サードパーティライブラリ -->
       <dependency>
