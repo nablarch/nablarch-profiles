@@ -137,7 +137,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-repository</artifactId>
-        <version>1.2.0</version>
+        <version>1.2.1</version>
       </dependency>
 
       <dependency>
