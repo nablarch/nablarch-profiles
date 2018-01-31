@@ -6,7 +6,7 @@
 
   <groupId>com.nablarch.profile</groupId>
   <artifactId>nablarch-profile-parent</artifactId>
-  <version>5u13</version>
+  <version>5u13-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>nablarch-profile-parent</name>
@@ -120,6 +120,10 @@
         <gpg.skip>true</gpg.skip>
       </properties>
       <distributionManagement>
+        <snapshotRepository>
+          <id>dev-deploy</id>
+          <url>${develop_snapshot_repo_url}</url>
+        </snapshotRepository>
         <repository>
           <id>dev-deploy</id>
           <url>${develop_repo_url}</url>
