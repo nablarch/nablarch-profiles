@@ -17,7 +17,7 @@
 
   <groupId>com.nablarch.profile</groupId>
   <artifactId>nablarch-bom</artifactId>
-  <version>5u12</version>
+  <version>5u13</version>
   <packaging>pom</packaging>
 
   <name>nablarch-bom</name>
@@ -101,7 +101,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core</artifactId>
-        <version>1.3.1</version>
+        <version>1.4.0</version>
       </dependency>
 
       <dependency>
@@ -113,7 +113,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-beans</artifactId>
-        <version>1.2.0</version>
+        <version>1.3.0</version>
       </dependency>
 
       <dependency>
@@ -125,7 +125,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-jdbc</artifactId>
-        <version>1.3.1</version>
+        <version>1.4.0</version>
       </dependency>
 
       <dependency>
@@ -137,7 +137,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-repository</artifactId>
-        <version>1.2.0</version>
+        <version>1.3.0</version>
       </dependency>
 
       <dependency>
@@ -149,13 +149,13 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-validation</artifactId>
-        <version>1.0.4</version>
+        <version>1.1.0</version>
       </dependency>
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-validation-ee</artifactId>
-        <version>1.0.6</version>
+        <version>1.1.0</version>
       </dependency>
 
       <dependency>
@@ -168,7 +168,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw</artifactId>
-        <version>1.1.2</version>
+        <version>1.2.0</version>
       </dependency>
 
       <dependency>
@@ -210,13 +210,13 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-standalone</artifactId>
-        <version>1.2.0</version>
+        <version>1.3.0</version>
       </dependency>
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-web</artifactId>
-        <version>1.4.2</version>
+        <version>1.5.0</version>
       </dependency>
 
       <dependency>
@@ -240,13 +240,13 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-web-tag</artifactId>
-        <version>1.0.7</version>
+        <version>1.1.0</version>
       </dependency>
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-mail-sender</artifactId>
-        <version>1.3.0</version>
+        <version>1.4.0</version>
       </dependency>
 
       <!-- common -->
@@ -277,7 +277,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-common-dao</artifactId>
-        <version>1.4.1</version>
+        <version>1.5.0</version>
       </dependency>
 
       <dependency>
@@ -295,7 +295,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-common-encryption</artifactId>
-        <version>1.0.2</version>
+        <version>1.1.0</version>
       </dependency>
 
       <dependency>
@@ -332,14 +332,14 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-backward-compatibility</artifactId>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
       </dependency>
 
       <!-- Nablarch Testing Framework -->
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-testing</artifactId>
-        <version>1.1.2</version>
+        <version>1.2.0</version>
       </dependency>
 
       <!-- toolbox -->
@@ -406,13 +406,35 @@
       <dependency>
         <groupId>com.nablarch.integration</groupId>
         <artifactId>nablarch-doma-adaptor</artifactId>
-        <version>1.1.0</version>
+        <version>1.2.0</version>
       </dependency>
       
       <dependency>
         <groupId>com.nablarch.integration</groupId>
         <artifactId>nablarch-jsr310-adaptor</artifactId>
         <version>1.0.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-mail-sender-freemarker-adaptor</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-mail-sender-thymeleaf-adaptor</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-mail-sender-velocity-adaptor</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-web-thymeleaf-adaptor</artifactId>
+        <version>1.0.0</version>
       </dependency>
 
       <!-- サードパーティライブラリ -->
@@ -431,17 +453,17 @@
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-all-in-one</artifactId>
-        <version>5u12</version>
+        <version>5u13</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-web</artifactId>
-        <version>5u12</version>
+        <version>5u13</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-batch</artifactId>
-        <version>5u12</version>
+        <version>5u13</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
