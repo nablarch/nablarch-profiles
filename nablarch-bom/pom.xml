@@ -17,7 +17,7 @@
 
   <groupId>com.nablarch.profile</groupId>
   <artifactId>nablarch-bom</artifactId>
-  <version>5u13-SNAPSHOT</version>
+  <version>5u14-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>nablarch-bom</name>
@@ -453,17 +453,17 @@
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-all-in-one</artifactId>
-        <version>5u13-SNAPSHOT</version>
+        <version>5u14-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-web</artifactId>
-        <version>5u13-SNAPSHOT</version>
+        <version>5u14-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-batch</artifactId>
-        <version>5u13-SNAPSHOT</version>
+        <version>5u14-SNAPSHOT</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
