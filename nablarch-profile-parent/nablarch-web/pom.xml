@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.nablarch.profile</groupId>
     <artifactId>nablarch-profile-parent</artifactId>
-    <version>5u13</version>
+    <version>5u14</version>
   </parent>
 
   <artifactId>nablarch-web</artifactId>
