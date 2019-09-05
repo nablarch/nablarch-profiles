@@ -342,6 +342,20 @@
         <version>1.3.0-SNAPSHOT</version>
       </dependency>
 
+      <!-- Nablarch Testing for jetty6 -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-testing-jetty6</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+
+      <!-- Nablarch Testing for jetty9 -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-testing-jetty9</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+
       <!-- toolbox -->
       <dependency>
         <groupId>com.nablarch.tool</groupId>
