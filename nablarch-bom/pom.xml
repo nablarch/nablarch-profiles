@@ -245,6 +245,12 @@
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-fw-web-doublesubmit-jdbc</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-mail-sender</artifactId>
         <version>1.5.0-SNAPSHOT</version>
       </dependency>
