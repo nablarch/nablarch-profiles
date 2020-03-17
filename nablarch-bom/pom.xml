@@ -341,6 +341,12 @@
         <version>1.1.0</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-scoped-dicontainer</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
       <!-- Nablarch Testing Framework -->
       <dependency>
         <groupId>com.nablarch.framework</groupId>
