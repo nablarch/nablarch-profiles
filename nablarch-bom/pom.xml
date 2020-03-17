@@ -405,11 +405,6 @@
       </dependency>
       <dependency>
         <groupId>com.nablarch.integration</groupId>
-        <artifactId>nablarch-log4j-adaptor</artifactId>
-        <version>1.0.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.nablarch.integration</groupId>
         <artifactId>nablarch-slf4j-adaptor</artifactId>
         <version>1.0.0</version>
       </dependency>
