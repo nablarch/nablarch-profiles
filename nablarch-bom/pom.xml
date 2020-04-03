@@ -101,19 +101,19 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core</artifactId>
-        <version>1.5.0-SNAPSHOT</version>
+        <version>1.6.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-applog</artifactId>
-        <version>1.1.0-SNAPSHOT</version>
+        <version>1.2.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-beans</artifactId>
-        <version>1.4.0-SNAPSHOT</version>
+        <version>1.5.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
@@ -137,7 +137,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-repository</artifactId>
-        <version>1.4.0-SNAPSHOT</version>
+        <version>1.5.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
@@ -168,7 +168,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw</artifactId>
-        <version>1.3.0-SNAPSHOT</version>
+        <version>1.4.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
@@ -216,13 +216,13 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-web</artifactId>
-        <version>1.6.0-SNAPSHOT</version>
+        <version>1.7.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-web-dbstore</artifactId>
-        <version>1.1.0-SNAPSHOT</version>
+        <version>1.2.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
@@ -246,7 +246,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-web-doublesubmit-jdbc</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
@@ -344,7 +344,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-scoped-dicontainer</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
       </dependency>
 
       <!-- Nablarch Testing Framework -->
@@ -379,7 +379,7 @@
       <dependency>
         <groupId>com.nablarch.configuration</groupId>
         <artifactId>nablarch-main-default-configuration</artifactId>
-        <version>1.2.0-SNAPSHOT</version>
+        <version>1.3.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.configuration</groupId>
