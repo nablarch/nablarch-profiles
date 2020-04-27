@@ -227,12 +227,6 @@
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
-        <artifactId>nablarch-fw-web-redisstore</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-web-extension</artifactId>
         <version>1.1.0-SNAPSHOT</version>
       </dependency>
@@ -253,12 +247,6 @@
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-web-doublesubmit-jdbc</artifactId>
         <version>1.1.0-SNAPSHOT</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.nablarch.framework</groupId>
-        <artifactId>nablarch-fw-web-doublesubmit-redis</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
@@ -468,6 +456,12 @@
         <groupId>com.nablarch.integration</groupId>
         <artifactId>nablarch-web-thymeleaf-adaptor</artifactId>
         <version>1.1.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-redisstore-lettuce-adaptor</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
       </dependency>
 
       <!-- サードパーティライブラリ -->
