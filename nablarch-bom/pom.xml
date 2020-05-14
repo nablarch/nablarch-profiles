@@ -368,6 +368,13 @@
         <version>1.1.0-SNAPSHOT</version>
       </dependency>
 
+      <!-- Nablarch Testing for RESTful web service -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-testing-rest</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+
       <!-- toolbox -->
       <dependency>
         <groupId>com.nablarch.tool</groupId>
