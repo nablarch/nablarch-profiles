@@ -10,7 +10,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <nablarch.version>5u16</nablarch.version>
+    <nablarch.version>5u17</nablarch.version>
   </properties>
 
   <modules>
