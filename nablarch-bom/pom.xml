@@ -17,7 +17,7 @@
 
   <groupId>com.nablarch.profile</groupId>
   <artifactId>nablarch-bom</artifactId>
-  <version>5u17</version>
+  <version>5u18</version>
   <packaging>pom</packaging>
 
   <name>nablarch-bom</name>
@@ -101,25 +101,25 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core</artifactId>
-        <version>1.5.0</version>
+        <version>1.5.1</version>
       </dependency>
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-applog</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.1</version>
       </dependency>
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-beans</artifactId>
-        <version>1.4.0</version>
+        <version>1.4.1</version>
       </dependency>
 
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-dataformat</artifactId>
-        <version>1.2.2</version>
+        <version>1.3.0</version>
       </dependency>
 
       <dependency>
@@ -137,7 +137,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-repository</artifactId>
-        <version>1.4.0</version>
+        <version>1.5.0</version>
       </dependency>
 
       <dependency>
@@ -168,7 +168,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw</artifactId>
-        <version>1.3.0</version>
+        <version>1.4.0</version>
       </dependency>
 
       <dependency>
@@ -186,7 +186,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-jaxrs</artifactId>
-        <version>1.0.3</version>
+        <version>1.1.0</version>
       </dependency>
 
       <dependency>
@@ -216,7 +216,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-fw-web</artifactId>
-        <version>1.7.0</version>
+        <version>1.8.0</version>
       </dependency>
 
       <dependency>
@@ -368,6 +368,13 @@
         <version>1.0.0</version>
       </dependency>
 
+      <!-- Nablarch Testing for RESTful web service -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-testing-rest</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
       <!-- toolbox -->
       <dependency>
         <groupId>com.nablarch.tool</groupId>
@@ -384,14 +391,14 @@
       <dependency>
         <groupId>com.nablarch.configuration</groupId>
         <artifactId>nablarch-testing-default-configuration</artifactId>
-        <version>1.1.0</version>
+        <version>1.2.0</version>
       </dependency>
 
       <!-- アダプター -->
       <dependency>
         <groupId>com.nablarch.integration</groupId>
         <artifactId>nablarch-router-adaptor</artifactId>
-        <version>1.1.0</version>
+        <version>1.2.0</version>
       </dependency>
 
       <dependency>
@@ -402,7 +409,7 @@
       <dependency>
         <groupId>com.nablarch.integration</groupId>
         <artifactId>nablarch-resteasy-adaptor</artifactId>
-        <version>1.0.5</version>
+        <version>1.0.6</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.integration</groupId>
@@ -449,12 +456,30 @@
       <dependency>
         <groupId>com.nablarch.integration</groupId>
         <artifactId>nablarch-mail-sender-velocity-adaptor</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
       </dependency>
 
       <dependency>
         <groupId>com.nablarch.integration</groupId>
         <artifactId>nablarch-web-thymeleaf-adaptor</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-lettuce-adaptor</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>nablarch-micrometer-adaptor</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.nablarch.integration</groupId>
+        <artifactId>slf4j-nablarch-adaptor</artifactId>
         <version>1.0.0</version>
       </dependency>
 
@@ -474,17 +499,17 @@
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-all-in-one</artifactId>
-        <version>5u17</version>
+        <version>5u18</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-web</artifactId>
-        <version>5u17</version>
+        <version>5u18</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-batch</artifactId>
-        <version>5u17</version>
+        <version>5u18</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
