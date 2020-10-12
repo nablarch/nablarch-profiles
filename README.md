@@ -1,11 +1,5 @@
 # 概要
 
-
-| master | develop |
-|:-----------|:------------|
-|[![Build Status](https://travis-ci.org/nablarch/nablarch-profiles.svg?branch=master)](https://travis-ci.org/nablarch/nablarch-profiles)|[![Build Status](https://travis-ci.org/nablarch/nablarch-profiles.svg?branch=develop)](https://travis-ci.org/nablarch/nablarch-profiles)|
-
-
 Nablarch Application Frameworkを使用する際に、
 処理方式毎のライブラリを集約したpomを提供します。
 
