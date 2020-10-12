@@ -6,7 +6,7 @@
 
   <groupId>com.nablarch.profile</groupId>
   <artifactId>nablarch-profile-parent</artifactId>
-  <version>5u18-SNAPSHOT</version>
+  <version>5-NEXT-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>nablarch-profile-parent</name>
