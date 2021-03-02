@@ -164,6 +164,12 @@
         <version>5-NEXT-SNAPSHOT</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.nablarch.workflow</groupId>
+        <artifactId>nablarch-workflow</artifactId>
+        <version>5-NEXT-SNAPSHOT</version>
+      </dependency>
+
       <!-- fw -->
       <dependency>
         <groupId>com.nablarch.framework</groupId>
