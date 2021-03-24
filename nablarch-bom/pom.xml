@@ -164,6 +164,12 @@
         <version>1.2.4</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.nablarch.workflow</groupId>
+        <artifactId>nablarch-workflow</artifactId>
+        <version>1.1.0</version>
+      </dependency>
+
       <!-- fw -->
       <dependency>
         <groupId>com.nablarch.framework</groupId>
