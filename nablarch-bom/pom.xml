@@ -158,18 +158,6 @@
         <version>6-NEXT-SNAPSHOT</version>
       </dependency>
 
-      <dependency>
-        <groupId>com.nablarch.framework</groupId>
-        <artifactId>nablarch-etl</artifactId>
-        <version>5-NEXT-SNAPSHOT</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.nablarch.workflow</groupId>
-        <artifactId>nablarch-workflow</artifactId>
-        <version>5-NEXT-SNAPSHOT</version>
-      </dependency>
-
       <!-- fw -->
       <dependency>
         <groupId>com.nablarch.framework</groupId>
@@ -347,31 +335,11 @@
         <version>6-NEXT-SNAPSHOT</version>
       </dependency>
 
-      <dependency>
-        <groupId>com.nablarch.framework</groupId>
-        <artifactId>nablarch-fw-scoped-dicontainer</artifactId>
-        <version>6-NEXT-SNAPSHOT</version>
-      </dependency>
-
       <!-- Nablarch Testing Framework -->
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-testing</artifactId>
         <version>6-NEXT-SNAPSHOT</version>
-      </dependency>
-
-      <!-- Nablarch Testing for jetty6 -->
-      <dependency>
-        <groupId>com.nablarch.framework</groupId>
-        <artifactId>nablarch-testing-jetty6</artifactId>
-        <version>5-NEXT-SNAPSHOT</version>
-      </dependency>
-
-      <!-- Nablarch Testing for jetty9 -->
-      <dependency>
-        <groupId>com.nablarch.framework</groupId>
-        <artifactId>nablarch-testing-jetty9</artifactId>
-        <version>5-NEXT-SNAPSHOT</version>
       </dependency>
 
       <!-- Nablarch Testing for RESTful web service -->
