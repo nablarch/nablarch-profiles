@@ -10,7 +10,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <nablarch.version>5-NEXT-SNAPSHOT</nablarch.version>
+    <nablarch.version>6-NEXT-SNAPSHOT</nablarch.version>
   </properties>
 
   <modules>
