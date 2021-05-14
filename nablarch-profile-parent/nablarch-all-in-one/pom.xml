@@ -142,10 +142,6 @@
       <groupId>com.nablarch.framework</groupId>
       <artifactId>nablarch-fw-web-tag</artifactId>
     </dependency>
-    <dependency>
-      <groupId>com.nablarch.framework</groupId>
-      <artifactId>nablarch-etl</artifactId>
-    </dependency>
   </dependencies>
 
 </project>
