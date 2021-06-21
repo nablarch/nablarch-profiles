@@ -48,9 +48,6 @@
   </scm>
 
   <properties>
-    <version.geronimo-jpa_spec>1.1</version.geronimo-jpa_spec>
-    <version.taglibs.standard>1.1.2</version.taglibs.standard>
-
     <release.allow.snapshot>false</release.allow.snapshot>
     <version.nablarch.jars>${project.version}</version.nablarch.jars>
 
@@ -455,18 +452,6 @@
         <groupId>com.nablarch.integration</groupId>
         <artifactId>slf4j-nablarch-adaptor</artifactId>
         <version>6-NEXT-SNAPSHOT</version>
-      </dependency>
-
-      <!-- サードパーティライブラリ -->
-      <dependency>
-        <groupId>taglibs</groupId>
-        <artifactId>standard</artifactId>
-        <version>${version.taglibs.standard}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.geronimo.specs</groupId>
-        <artifactId>geronimo-jpa_2.0_spec</artifactId>
-        <version>${version.geronimo-jpa_spec}</version>
       </dependency>
 
       <!-- Nablarch Profiles -->
