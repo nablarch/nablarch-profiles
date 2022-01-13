@@ -381,6 +381,13 @@
         <version>5-NEXT-SNAPSHOT</version>
       </dependency>
 
+      <!-- Nablarch Testing JUnit5 Extension -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-testing-junit5</artifactId>
+        <version>5-NEXT-SNAPSHOT</version>
+      </dependency>
+
       <!-- toolbox -->
       <dependency>
         <groupId>com.nablarch.tool</groupId>
