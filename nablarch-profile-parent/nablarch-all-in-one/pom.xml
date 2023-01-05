@@ -56,6 +56,10 @@
     </dependency>
     <dependency>
       <groupId>com.nablarch.framework</groupId>
+      <artifactId>nablarch-common-auth-session</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.nablarch.framework</groupId>
       <artifactId>nablarch-common-code-jdbc</artifactId>
     </dependency>
     <dependency>
