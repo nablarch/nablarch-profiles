@@ -17,7 +17,7 @@
 
   <groupId>com.nablarch.profile</groupId>
   <artifactId>nablarch-bom</artifactId>
-  <version>6-NEXT-SNAPSHOT</version>
+  <version>6</version>
   <packaging>pom</packaging>
 
   <name>nablarch-bom</name>
