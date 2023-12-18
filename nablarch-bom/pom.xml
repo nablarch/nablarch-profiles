@@ -349,7 +349,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-testing-jetty12</artifactId>
-        <version>2.0.0</version>
+        <version>1.0.0</version>
       </dependency>
 
       <!-- Nablarch Testing for RESTful web service -->
