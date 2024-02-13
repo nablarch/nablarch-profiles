@@ -490,6 +490,15 @@
         <artifactId>nablarch-batch</artifactId>
         <version>6-NEXT-SNAPSHOT</version>
       </dependency>
+
+      <!-- 複数ライブラリが異なるバージョンのnettyに依存しているため、バージョン統一に必要 -->
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-bom</artifactId>
+        <version>4.1.89.Final</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
