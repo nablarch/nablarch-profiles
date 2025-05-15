@@ -17,7 +17,7 @@
 
   <groupId>com.nablarch.profile</groupId>
   <artifactId>nablarch-bom</artifactId>
-  <version>5u25</version>
+  <version>5u26</version>
   <packaging>pom</packaging>
 
   <name>nablarch-bom</name>
@@ -119,7 +119,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-core-dataformat</artifactId>
-        <version>1.3.4</version>
+        <version>1.3.5</version>
       </dependency>
 
       <dependency>
@@ -265,7 +265,7 @@
       <dependency>
         <groupId>com.nablarch.framework</groupId>
         <artifactId>nablarch-common-auth</artifactId>
-        <version>1.2.0</version>
+        <version>1.2.1</version>
       </dependency>
 
       <dependency>
@@ -405,19 +405,19 @@
       <dependency>
         <groupId>com.nablarch.configuration</groupId>
         <artifactId>nablarch-main-default-configuration</artifactId>
-        <version>5u25</version>
+        <version>5u26</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.configuration</groupId>
         <artifactId>nablarch-testing-default-configuration</artifactId>
-        <version>5u25</version>
+        <version>5u26</version>
       </dependency>
 
       <!-- アダプター -->
       <dependency>
         <groupId>com.nablarch.integration</groupId>
         <artifactId>nablarch-router-adaptor</artifactId>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
       </dependency>
 
       <dependency>
@@ -518,17 +518,17 @@
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-all-in-one</artifactId>
-        <version>5u25</version>
+        <version>5u26</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-web</artifactId>
-        <version>5u25</version>
+        <version>5u26</version>
       </dependency>
       <dependency>
         <groupId>com.nablarch.profile</groupId>
         <artifactId>nablarch-batch</artifactId>
-        <version>5u25</version>
+        <version>5u26</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -551,6 +551,10 @@
         <gpg.skip>true</gpg.skip>
       </properties>
       <distributionManagement>
+        <snapshotRepository>
+          <id>dev-deploy</id>
+          <url>${develop_snapshot_repo_url}</url>
+        </snapshotRepository>
         <repository>
           <id>dev-deploy</id>
           <url>${develop_repo_url}</url>
