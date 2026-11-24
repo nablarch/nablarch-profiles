@@ -354,6 +354,20 @@
         <version>6-NEXT-SNAPSHOT</version>
       </dependency>
 
+      <!-- Nablarch Testing Framework YAML support -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-testing-yaml</artifactId>
+        <version>6-NEXT-SNAPSHOT</version>
+      </dependency>
+
+      <!-- Nablarch Testing Framework test data converter -->
+      <dependency>
+        <groupId>com.nablarch.framework</groupId>
+        <artifactId>nablarch-testing-converter</artifactId>
+        <version>6-NEXT-SNAPSHOT</version>
+      </dependency>
+
       <!-- Nablarch Testing for jetty12 -->
       <dependency>
         <groupId>com.nablarch.framework</groupId>
